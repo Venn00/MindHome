@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'MaplestoryOTFLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+  --Color1: #ff5c58;
+  --Color2: #FE8F8F;
+  --Color3: #FCD2D1;
+  --Color4: #FFEDD3;
+  --Color5: #fffdfb;
+  --Color6: rgb(249,250,252);
+  --Color7: #897a7a;
+  --borderColor: rgb(240,240,240);
+}
+
+a {
+  text-align: center;
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상 제거 */
+}
+
+a:hover {
+  font-weight:bolder;
+}
+
+* {
+  color: var(--Color7);
+  font-family: 'Pretendard-Regular';
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+  background-color: var(--Color6);
+}
+
+/* HEADER */
+
+#header { 
+  /* width:100vw; */
+  height: 60px;
+  background-color: white;
+  position:sticky;
+  display:flex;
+  top:0;
+  justify-content: space-between;
+  border-left: 1em;
+  border-bottom: 0.3em solid var(--borderColor);
+  border-radius: 2em;
+}
+
+#navSets{
+  display: flex;
+  font-size: 1.2em;
+  text-align:center;
+  
+}
+
+#title {  /* HEADEAR.MINDHOME */
+  padding-top: 0.3em;
+  padding-left: 2em;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;  
+}
+#subtitle {/* HEADEAR.내주변심리상담소찾기 */
+  padding-left: 2.8em;
+  font-size: 0.9em;  
+  font-family: 'MaplestoryOTFLight';
+  text-align: center;
+}
+
+#login {/* HEADEAR.login button */
+  padding: 1em;
+  padding-right : 2em;
+  font-size: 1.2em;
+  width: 3em;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  border-bottom: 3px solid var(--borderColor);
+  border-radius: 1em;
+}
+
+#naviLeft {
+  min-width: 6em;
+  padding: 3em;
+  text-align: center;
+}
+
+#naviCenter{
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#naviCenter div{
+  min-width: 6em;
+  padding-top: 0.3em;
+  padding-bottom:0.3em;
+}
+/* #article {
+  border: black solid 2px;
+} */
+#naviRight{
+  width: 15em;
+  /* border: black solid 2px; */
+}
