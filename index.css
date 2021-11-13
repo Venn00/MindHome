@@ -49,7 +49,6 @@ body{
 /* HEADER */
 
 #header { 
-  /* width:100vw; */
   height: 60px;
   background-color: white;
   position:sticky;
@@ -58,7 +57,6 @@ body{
   justify-content: space-between;
   border-left: 1em;
   border-bottom: 0.3em solid var(--borderColor);
-  border-radius: 2em;
 }
 
 #navSets{
@@ -89,7 +87,7 @@ body{
   width: 3em;
 }
 
-#navigation {
+#navigation {  /* 내려오는 바 */
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -97,6 +95,7 @@ body{
   background-color: white;
   border-bottom: 3px solid var(--borderColor);
   border-radius: 1em;
+  display: none;   
 }
 
 #naviLeft {
@@ -122,4 +121,32 @@ body{
 #naviRight{
   width: 15em;
   /* border: black solid 2px; */
+}
+
+
+#main{
+  border: solid 5px blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+#articleLeft{
+  flex-grow: 0.3;
+  border: solid 1px black;
+}
+
+#articleRight{
+  flex-grow: 0.3;
+  border: solid 1px black;
+}
+
+#articles{
+  flex-grow: 1;
+  border: solid 1px black;
+}
+
+#articles div{
+  text-align: center;
+  height: 200px;
+  border: solid 1px black;
 }
