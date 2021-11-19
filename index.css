@@ -30,11 +30,13 @@ a {
   color: inherit; /* 링크의 색상 제거 */
 }
 
-a:hover {
-  font-weight:bolder;
+li {
+  list-style: none;
 }
 
 * {
+  
+  border-collapse: collapse;
   color: var(--Color7);
   font-family: 'Pretendard-Regular';
   padding: 0;
@@ -45,6 +47,25 @@ a:hover {
 body{
   background-color: var(--Color6);
 }
+
+/* STYLE DIV */
+.text-center {
+  display: inline;
+  text-align: center;
+}
+.pagination {
+  height:5em;
+}
+.pagination li{
+  display: inline-block;
+  width:1em;
+  height:1.4em;
+  vertical-align: bottom;
+}
+.pagination li:hover{
+  font-size: large;
+}
+
 
 /* HEADER */
 
@@ -91,11 +112,10 @@ body{
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  position: fixed;
+  position: static;
   background-color: white;
-  border-bottom: 3px solid var(--borderColor);
-  border-radius: 1em;
-  display: none;   
+  border-bottom: 4px solid var(--borderColor);
+  /* display: none;    */
 }
 
 #naviLeft {
@@ -124,29 +144,63 @@ body{
 }
 
 
-#main{
-  border: solid 5px blue;
+.main{
   display: flex;
   justify-content: space-between;
 }
 
 #articleLeft{
   flex-grow: 0.3;
-  border: solid 1px black;
 }
 
 #articleRight{
   flex-grow: 0.3;
-  border: solid 1px black;
 }
 
 #articles{
+  background-color: white;
+  max-width: 50em;
   flex-grow: 1;
-  border: solid 1px black;
 }
 
-#articles div{
+
+/* Body > Article  > Table. */
+
+.tSummary{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2em;
+}
+.tMenu{
+  height:2em;
   text-align: center;
-  height: 200px;
-  border: solid 1px black;
+  font-size: small;
+  background-color: var(--borderColor);
+}
+.table{
+  font-size:0.9em;
+  width: 100%;
+}
+.table th, td {
+  border-bottom: 2px solid var(--borderColor);
+  padding: 0.3em;
+}
+.tNum{
+  text-align: center;
+}
+#searchBtn{
+  width:3em;
+}
+
+
+
+@media all and (max-width: 900px) { 
+  #articleLeft{
+    display:none;
+
+  } 
+  #articleRight{
+    display:none;
+    
+  }
 }
