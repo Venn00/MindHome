@@ -1,0 +1,113 @@
+/* Header */
+
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* font-family: 'Dongle', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@700&display=swap');
+
+/* font-family: 'Do Hyeon', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/* font-family: 'Sunflower', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+
+:root{ 
+  --headerHeight: 64px;
+}
+
+
+.Header{
+  z-index: 100;
+  position:sticky;
+  top:0;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 5px 5px white;
+}
+
+.Header_Container{
+  display:flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  height: var(--headerHeight);
+  background-color: white;
+  
+}
+.Header_Logo{
+  margin-top: 15px;
+  padding-left: 10px;
+  color: var(--Color2);
+  min-width: 140px;
+}
+.Header_LogoIcon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+.Header_LogoTitle {
+  position:relative;
+  bottom: 5px;
+  padding:none;
+  margin:none;
+  font-size: 12px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.Header_Search{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  max-width: 500px;
+  border-bottom: 2px solid var(--Color4);
+  height:52px;
+  margin-left: 10px;
+  min-width: 200px;
+}
+.Header_SearchInput{
+  padding-left: 20px;
+  height: 30px;
+  flex-grow: 1;
+  max-width: 500px;
+  border: none;
+  margin:0;
+  margin-top:16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--Color1);
+  
+}
+.Header_SearchInput:focus{
+  outline: none;
+}
+.Header_SearchBtn{
+  color: var(--Color4);
+  margin:0;
+  margin-top:12px;
+  background-color: white;
+  padding-left: 10px;
+  border: none;
+  font-size: 18px;
+  
+}
+
+.Header_LoginBtn {/* HEADEAR.login button */
+  padding-top: 20px;
+  min-width: 100px;
+  width: 3em;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Color2);
+}
+
+.Navigation {  /* 내려오는 바 */  
+  height: 80px;
+  margin-bottom:50px;
+  z-index: 50;
+  position:sticky;
+  top: var(--headerHeight);
+  background-color: var(--Color3);
+  box-shadow: 0 5px 5px var(--Color3);
+}
+
+
+

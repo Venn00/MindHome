@@ -6,109 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
     @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
   </style>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
- 
-  <header id="header">
-    <a id="titleSet" href="">
-      <div id="title">MIND HOME</div>
-      <div id="subtitle">내 주변 심리상담소 찾기</div>
-    </a>
-    <div id=navSets>
+  <header class="Header">
+    <div class="Header_Container">
+      <a class="Header_Logo" href="">
+        <div class="Header_LogoIcon">MIND HOME</div>
+        <div class="Header_LogoTitle">내 주변 심리상담소 찾기</div>
+      </a>
+      <div class="Header_Search">
+        <button class = "Header_SearchBtn"><i class="fas fa-search" id="Header_SearchIcon"></i></button>
+        <input class="Header_SearchInput" placeholder="지역, 이름으로 검색" spellCheck="false" type="text">
+      </div>  
+      <a class="Header_LoginBtn" href="/login">로그인</a>
     </div>
-    <a id="login" href="/login">
-    로그인
-    </a>
-  </header>
 
-  <div id="navigation">
-    <div id="naviLeft">
-      <nav>지역</nav>
-    </div>
-    <div id="naviCenter">
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-    </div>
-    <div id="naviRight">
+  </header>
+  <div class="Navigation">
+  </div>
+
+
+  <div class="Main">
+    <div class="Main_Container">
+      <div class="Main_Left">
+        <img src="maps.png" alt="ERROR">
+      </div>
+      
+      <div class="Main_Mid">
+        <article class="article">
+          <ul>
+            <li class="Post_Container">1
+              <div class="Post">
+                구름상담소
+              </div>
+            </li>
+            <li class="Post_Container">2</li>
+            <li class="Post_Container">3</li>
+            <li class="Post_Container">4</li>
+            <li class="Post_Container">5</li>
+            <li class="Post_Container">6</li>
+          </ul>
+
+
+       </article>
+      </div>
     </div>
   </div>
-  <article class="main">
-    <div id="articleLeft">articleLeft</div>
-    <div id="articles">
-      <div class=tSummary>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>
-          <input>
-          <button id = "searchBtn">검색</button>
-        </div>  
-      </div>
-      <table class="table">
-        <tr class="tMenu">
-          <th>번호</th>
-          <th>제목</th>
-          <th>주소</th>
-          <th>후기</th>
-          <th>추천</th>
-        </tr>
-    
-        <tbody>
-          <tr>
-            <th class= "tNum">1</th>
-            <td>공감심리상담소</td>
-            <td>경남 창원시 성산구 동산로 220번길 29</td>
-            <td>12</td>
-            <td>33</td>
-          </tr>
-          
-          <tr>
-            <th class= tNum>2</th>
-            <td>김은수심리상담소</td>
-            <td>경기 수원시 팔달구 향교로 136-4</td>
-            <td>5</td>
-            <td>14</td>
-          </tr>
-        </tbody>
-        
-    
-      </table>
-      <div class="text-center">
-        <ul class="pagination">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-        </ul> 
-      </div>
-    </div>
-    <div id="articleRight">articleRight</div>    
 
-  </article>
+    
 
+  </div>
   <script src="index.js"></script>
   
 </body>

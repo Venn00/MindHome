@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'MaplestoryOTFLight';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
@@ -12,13 +13,12 @@
   font-weight: 400;
   font-style: normal;
 }
-
 :root{
-  --Color1: #ff5c58;
-  --Color2: #FE8F8F;
-  --Color3: #FCD2D1;
-  --Color4: #FFEDD3;
-  --Color5: #fffdfb;
+  --Color1: #1b4965;
+  --Color2: #5fa8d3;
+  --Color3: #62b6cb;
+  --Color4: #bee9e8;
+  --Color5: #cae9ff;
   --Color6: rgb(249,250,252);
   --Color7: #897a7a;
   --borderColor: rgb(240,240,240);
@@ -35,50 +35,17 @@ li {
 }
 
 * {
-  
-  border-collapse: collapse;
-  color: var(--Color7);
-  font-family: 'Pretendard-Regular';
+  box-sizing:border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body{
+  justify-content: center;
   background-color: var(--Color6);
+
 }
 
-/* STYLE DIV */
-.text-center {
-  display: inline;
-  text-align: center;
-}
-.pagination {
-  height:5em;
-}
-.pagination li{
-  display: inline-block;
-  width:1em;
-  height:1.4em;
-  vertical-align: bottom;
-}
-.pagination li:hover{
-  font-size: large;
-}
-
-
-/* HEADER */
-
-#header { 
-  height: 60px;
-  background-color: white;
-  position:sticky;
-  display:flex;
-  top:0;
-  justify-content: space-between;
-  border-left: 1em;
-  border-bottom: 0.3em solid var(--borderColor);
-}
 
 #navSets{
   display: flex;
@@ -87,120 +54,54 @@ body{
   
 }
 
-#title {  /* HEADEAR.MINDHOME */
-  padding-top: 0.3em;
-  padding-left: 2em;
-  font-size: 1.3em;
-  text-align: center;
-  font-family: 'Mochiy Pop P One', sans-serif;  
-}
-#subtitle {/* HEADEAR.내주변심리상담소찾기 */
-  padding-left: 2.8em;
-  font-size: 0.9em;  
-  font-family: 'MaplestoryOTFLight';
-  text-align: center;
-}
 
-#login {/* HEADEAR.login button */
-  padding: 1em;
-  padding-right : 2em;
-  font-size: 1.2em;
-  width: 3em;
-}
-
-#navigation {  /* 내려오는 바 */
-  display: flex;
+/* MAIN */
+.Main{
   justify-content: space-between;
-  width: 100vw;
-  position: static;
-  background-color: white;
-  border-bottom: 4px solid var(--borderColor);
-  /* display: none;    */
-}
-
-#naviLeft {
-  min-width: 6em;
-  padding: 3em;
   text-align: center;
+  flex-grow: 1;
 }
-
-#naviCenter{
-  margin: 0.5em;
+.Main_Container{
+  margin:auto;
+  border: solid 2px red;
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-#naviCenter div{
-  min-width: 6em;
-  padding-top: 0.3em;
-  padding-bottom:0.3em;
-}
-/* #article {
-  border: black solid 2px;
-} */
-#naviRight{
-  width: 15em;
-  /* border: black solid 2px; */
 }
 
-
-.main{
-  display: flex;
-  justify-content: space-between;
+.Main_Left{
+  border: solid 2px black;
+  min-width: 140px;
 }
 
-#articleLeft{
-  flex-grow: 0.3;
+.Main_Right{
+  border: solid 2px black;
+  min-width: 140px;
 }
 
-#articleRight{
-  flex-grow: 0.3;
+.Main_Mid{
+  flex-grow: 1;
+  border: solid 2px black;
 }
 
-#articles{
-  background-color: white;
-  max-width: 50em;
+.article{
+  display:flex;
   flex-grow: 1;
 }
 
-
-/* Body > Article  > Table. */
-
-.tSummary{
-  display: flex;
-  justify-content: space-between;
-  padding: 0.2em;
-}
-.tMenu{
-  height:2em;
-  text-align: center;
-  font-size: small;
-  background-color: var(--borderColor);
-}
-.table{
-  font-size:0.9em;
-  width: 100%;
-}
-.table th, td {
-  border-bottom: 2px solid var(--borderColor);
-  padding: 0.3em;
-}
-.tNum{
-  text-align: center;
-}
-#searchBtn{
-  width:3em;
+.Post_Container{
+  height: 150px;
+  border: solid 1px var(--Color7)
 }
 
 
 
-@media all and (max-width: 900px) { 
-  #articleLeft{
+/* media */
+@media all and (max-width: 800px) { 
+  .Main_Left{
     display:none;
 
   } 
-  #articleRight{
+  .Main_Right{
     display:none;
-    
   }
 }
