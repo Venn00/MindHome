@@ -6,67 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
     @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
   </style>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
-  <header id="header">
-    <a id="titleSet" href="">
-      <div id="title">MIND HOME</div>
-      <div id="subtitle">내 주변 심리상담소 찾기</div>
-    </a>
-    <div id=navSets>
+  <header class="Header">
+    <div class="Header_Container">
+      <a class="Header_Logo" href="">
+        <div class="Header_LogoIcon">MIND HOME</div>
+        <div class="Header_LogoTitle">내 주변 심리상담소 찾기</div>
+      </a>
+      <div class="Header_Search">
+        <button class = "Header_SearchBtn"><i class="fas fa-search" id="Header_SearchIcon"></i></button>
+        <input class="Header_SearchInput" placeholder="지역, 이름으로 검색" spellCheck="false" type="text">
+      </div>  
+      <a class="Header_LoginBtn" href="/login">로그인</a>
     </div>
-    <a id="login" href="/login">
-    로그인
-    </a>
-  </header>
 
-  <div id="navigation">
-    <div id="naviLeft">
-      <nav>지역</nav>
-    </div>
-    <div id="naviCenter">
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-      <div>서울시</div>
-    </div>
-    <div id="naviRight">
+  </header>
+  <div class="Navigation">
+  </div>
+
+
+  <div class="Main">
+    <div class="Main_Container">
+      
+      <div class="Main_Left">
+      </div>
+      
+      <div class="Main_Mid">
+        <article class="article">
+          <ul class="Flex_Container">
+            <li class="Post_Container">
+              <div class="info">
+                <a>
+                  <h2 class="title">구름상담소</h2>
+                </a>
+                <p class="etc">
+                  서울시 광진구 423번지
+                </p>
+                <p class="etc">
+                  <span class="review_count">45</span>
+                  <span class="thumbs_count">32</span>
+                </p>
+              </div>
+              <div class="comment">
+              </div>
+              <div class="comment">
+                레알 좋습니다.
+              </div>
+            </li>
+            <li class="Post_Container">2</li>
+            <li class="Post_Container">3</li>
+            <li class="Post_Container">4</li>
+            <li class="Post_Container">5</li>
+            <li class="Post_Container">6</li>
+          </ul>
+     </article>
+      </div>
+      
+      
+      
+      <div class="Main_Right">
+      </div>
     </div>
   </div>
-  <article id="article">
 
+    
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-  </article>
-
+  </div>
   <script src="index.js"></script>
+  
 </body>
 </html>
