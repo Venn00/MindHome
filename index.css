@@ -46,6 +46,16 @@ body{
 
 }
 
+.Flex_Container{
+  display: flex;
+  flex-basis: 90%;
+  margin:auto;
+  flex-direction: column;
+  text-align:left;
+}
+
+
+
 
 #navSets{
   display: flex;
@@ -89,10 +99,16 @@ body{
 }
 
 .Post_Container{
+  display: flex;
   height: 150px;
+  width: 100%;
   border: solid 1px var(--Color7)
 }
 
+
+.Map_naver{
+  width:150px;
+}
 
 
 /* media */
